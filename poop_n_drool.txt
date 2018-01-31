@@ -1,0 +1,130 @@
+			 .----------------.  .----------------.  .----------------.  .----------------.                     
+			| .--------------. || .--------------. || .--------------. || .--------------. |                    
+			| |   ______     | || |     ____     | || |     ____     | || |   ______     | |                    
+			| |  |_   __ \   | || |   .'    `.   | || |   .'    `.   | || |  |_   __ \   | |                    
+			| |    | |__) |  | || |  /  .--.  \  | || |  /  .--.  \  | || |    | |__) |  | |                    
+			| |    |  ___/   | || |  | |    | |  | || |  | |    | |  | || |    |  ___/   | |                    
+			| |   _| |_      | || |  \  `--'  /  | || |  \  `--'  /  | || |   _| |_      | |                    
+			| |  |_____|     | || |   `.____.'   | || |   `.____.'   | || |  |_____|     | |                    
+			| |              | || |              | || |              | || |              | |                    
+			| '--------------' || '--------------' || '--------------' || '--------------' |                    
+			 '----------------'  '----------------'  '----------------'  '----------------'                     
+										 .----------------.                                                                                 
+										| .--------------. |                                                                                
+										| |    ___       | |                                                                                
+										| |  .' _ '.     | |                                                                                
+										| |  | (_) '___  | |                                                                                
+										| |  .`___'/ _/  | |                                                                                
+										| | | (___)  \_  | |                                                                                
+										| | `._____.\__| | |                                                                                
+										| |              | |                                                                                
+										| '--------------' |                                                                                
+										 '----------------'                                                                                 
+ .----------------.  .----------------.  .----------------.  .----------------.  .----------------. 
+| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |
+| |  ________    | || |  _______     | || |     ____     | || |     ____     | || |   _____      | |
+| | |_   ___ `.  | || | |_   __ \    | || |   .'    `.   | || |   .'    `.   | || |  |_   _|     | |
+| |   | |   `. \ | || |   | |__) |   | || |  /  .--.  \  | || |  /  .--.  \  | || |    | |       | |
+| |   | |    | | | || |   |  __ /    | || |  | |    | |  | || |  | |    | |  | || |    | |   _   | |
+| |  _| |___.' / | || |  _| |  \ \_  | || |  \  `--'  /  | || |  \  `--'  /  | || |   _| |__/ |  | |
+| | |________.'  | || | |____| |___| | || |   `.____.'   | || |   `.____.'   | || |  |________|  | |
+| |              | || |              | || |              | || |              | || |              | |
+| '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |
+ '----------------'  '----------------'  '----------------'  '----------------'  '----------------' 
+
+* Gameplay loop:
+	child is dropped off (distinguished by shirt color?)
+	after some time, parent will arrive to pick up
+		there will be on screen counter/meter to show remaining time for the child and their status
+	get points when a child is delivered to parent
+		bonus points for delivering quickly, decreases over time to 0 points
+		less points if child is:
+			dirty
+			hungry
+			sleepy
+			sad
+
+		scale = 1.5 * (max parent wait time - parent wait time) / max parent wait time
+		points = (clean? * .25 + fed? * .25 + rested? * .25 + happy? * .25) * scale
+
+
+* Controls
+	Movement
+	Interact
+		pick up object in front of you (can hold 2 objects?)
+		trigger object in front of you
+		use object you are holding on object in front of you
+	Drop held object
+	Run
+
+
+* Diapers
+	after some time, child will soil their diaper
+	while holding child, interact with changing table to put them on it
+	while hold clean diaper, interact with changing table to put it on it (can hold up to 5?)
+	when changing table has child and diaper, interact for set time to change the diaper
+	you are now holding a soiled diaper
+	child is on table with clean diaper
+		interact with empty hand to pick up child
+
+* Milk
+	after some time, child will be hungry
+	while holding an empty bottle, interact with the fridge to fill it with milk
+	while holding a full bottle, interact with a hungry child in a high chair to feed them
+	over time the bottle will drain
+	some children require multiple bottles
+	you are now hold a dirty bottle
+	child will be on the floor?
+
+* Dishwasher
+	can hold several dirty bottles
+	while holding a dirty bottle, interact with dishwasher to load
+	while holding nothing and dishwasher has at least 1 dirty bottle in it, interact to start
+	it will run for some time
+	interact when finished to empty
+		clean bottles will be placed somewhere
+
+* Alternative - feeding
+	put child in high chair
+	interact with pile of dishes to get clean dish
+	while holding clean dish, interact with fridge to get food
+	while holding food, interact with high chair to feed child
+	you are now hold dirty dishes
+
+	use dishwasher as above
+	interact when finished to hold pile of clean dishes
+
+* Spit up
+	after some time, child may spit up directly beneath them and become dirty
+	any child that moves through the space becomes soiled
+	use mop/cleaner on the space to clean it
+
+* Sink
+	interact while holding a dirty child to clean them
+
+* Trash
+	dirty diapers can be put in
+	child can be put and is now dirty
+
+* Crib
+	interact while holding sleepy child to put them in
+	after some time they will be rested
+
+* Crying child
+	if:
+		child is in their crib for too long when not tired
+		if you run into a child
+		child is dirty/hungry/sleepy for too long
+	they will start crying
+	pick up and hold child for some time to calm them
+
+* Toys
+	trip if you run into them
+	clutter the floor
+	are picked up by children and moved around the room
+
+* Conveyer belts + walls
+	some levels split the playing area so you must pass children and items back and forth
+
+* Outside
+	keep children from escaping
