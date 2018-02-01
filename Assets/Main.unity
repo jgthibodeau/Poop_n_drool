@@ -839,7 +839,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 40
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &204458622
 Transform:
   m_ObjectHideFlags: 0
@@ -866,7 +866,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: ffc1fedccd5059c4e9e1120bdaeb3f0c, type: 2}
+  - {fileID: 2100000, guid: 802f9f2dbd1a65c43948216b085e2f65, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6133,6 +6133,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: b971bd86989105242bdb7768b8023111, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ecd68c1d97876d41a92094dd0ca000b, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b971bd86989105242bdb7768b8023111, type: 3}
   m_IsPrefabParent: 0
@@ -12659,7 +12663,7 @@ Prefab:
     - target: {fileID: 224827860292167936, guid: b9ee920570d527e4480cb74b138af3d4,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224878942105560060, guid: b9ee920570d527e4480cb74b138af3d4,
         type: 2}
@@ -12679,7 +12683,7 @@ Prefab:
     - target: {fileID: 224878942105560060, guid: b9ee920570d527e4480cb74b138af3d4,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224280816210530880, guid: b9ee920570d527e4480cb74b138af3d4,
         type: 2}
@@ -12699,7 +12703,7 @@ Prefab:
     - target: {fileID: 224280816210530880, guid: b9ee920570d527e4480cb74b138af3d4,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224096701516142950, guid: b9ee920570d527e4480cb74b138af3d4,
         type: 2}
@@ -12719,7 +12723,7 @@ Prefab:
     - target: {fileID: 224096701516142950, guid: b9ee920570d527e4480cb74b138af3d4,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224411763867327144, guid: b9ee920570d527e4480cb74b138af3d4,
         type: 2}
@@ -12739,7 +12743,7 @@ Prefab:
     - target: {fileID: 224411763867327144, guid: b9ee920570d527e4480cb74b138af3d4,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9ee920570d527e4480cb74b138af3d4, type: 2}
